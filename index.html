@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Area</title>
+    <script src="textarea.js" defer></script>
+</head>
+<body>
+    <h1>Character Counter</h1>
+    <textarea placeholder="Type Here......." id="text-input" maxlength="200" rows="10" cols="50"></textarea>
+    <div><span id="char-count">0</span>/200 Characters</div>
+
+
+    <style>
+
+        body{
+            background: rgb(34,193,195);
+            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(209,45,253,1) 100%);
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        h1{
+            text-decoration: underline;
+        }
+
+        #text-input{
+            border: 2px solid grey;
+            padding: 10px;
+            font-size: 16px;
+            width: 50%;
+            border-radius: 10px;
+        }
+        #text-input.limit-reached{
+            border-color: red;
+            outline: none;
+        }
+    </style>
+
+</body>
+</html>
